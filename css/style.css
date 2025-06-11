@@ -99,3 +99,13 @@ footer {
 .dark-mode .logo-img {
   content: url("../images/logo-light.png");
 }
+
+.priority-low td {
+  background-color: #e0f7e9;
+}
+.priority-medium td {
+  background-color: #fff9e6;
+}
+.priority-high td {
+  background-color: #ffe6e6;
+}
