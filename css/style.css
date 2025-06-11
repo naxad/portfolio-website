@@ -1,7 +1,28 @@
+:root {
+  --bg-color: #ffffff;
+  --main-text: #000000;
+  --secondary-text: #555555;
+  --card-bg: #f8f9fa;
+  --link-color: #0d6efd;
+}
+
 body {
-  background-color: #0d1117;
-  color: #f0f6fc;
+  background-color: var(--bg-color);
+  color: var(--main-text);
   font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--main-text);
 }
 
 .btn-primary {
@@ -19,10 +40,29 @@ body {
   color: #f0f6fc;
 }
 
-a {
-  text-decoration: none;
+footer {
+  background-color: var(--card-bg);
+  color: var(--main-text);
+  padding: 1.5rem 0;
 }
 
-h1, .lead, h2 {
-  color: #ffffff;
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #0d1117;
+  --main-text: #f0f6fc;
+  --secondary-text: #c0c0c0;
+  --card-bg: #1c1c1c;
+  --link-color: #58a6ff;
+}
+
+.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .text-dark {
+  color: #f0f6fc !important;
+}
+
+.dark-mode .form-check-label {
+  color: #f0f6fc !important;
 }
