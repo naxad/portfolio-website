@@ -91,3 +91,11 @@ footer {
 .dark-mode #footer a {
   color: #58a6ff !important;
 }
+
+.logo-img {
+  content: url("../images/logo-dark.png");
+}
+
+.dark-mode .logo-img {
+  content: url("../images/logo-light.png");
+}
