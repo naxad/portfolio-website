@@ -66,3 +66,28 @@ footer {
 .dark-mode .form-check-label {
   color: #f0f6fc !important;
 }
+
+/* Dark mode navbar override */
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .navbar .nav-link {
+  color: #f0f6fc !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .form-check-label {
+  color: #f0f6fc !important;
+}
+
+/* Dark mode footer override */
+.dark-mode footer,
+.dark-mode #footer {
+  background-color: #161b22 !important;
+  color: #f0f6fc !important;
+}
+
+.dark-mode #footer a {
+  color: #58a6ff !important;
+}
