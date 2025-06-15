@@ -109,3 +109,21 @@ footer {
 .priority-high td {
   background-color: #ffe6e6;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Grow to fill available space between navbar and footer */
+}
+
+footer {
+  background-color: var(--card-bg);
+  color: var(--main-text);
+  padding: 1.5rem 0;
+}
