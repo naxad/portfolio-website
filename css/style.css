@@ -151,3 +151,35 @@ footer {
 .carousel-caption-box p {
   color: #ffffff;
 }
+
+
+.stylish-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Round the top-left and top-right corners of the table header */
+.stylish-table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+.stylish-table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Round the bottom corners of the table body */
+.stylish-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+.stylish-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.15);
+}
