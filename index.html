@@ -17,27 +17,32 @@
   <!-- Navbar -->
   <div id="navbar"></div>
 
-  <!-- Main -->
+  <!-- Main Content -->
   <main class="container py-5">
+    <section class="mb-4">
+      <div class="greeting-box text-center p-4 rounded shadow-sm">
+        <p id="greeting" class="m-0 fs-5 fw-semibold"></p>
+      </div>
+    </section>
+    <!-- Hero -->
     <section class="row align-items-center my-5">
       <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
         <h1 class="display-4 fw-bold">I'm Anastasios Tsevas</h1>
         <p class="lead">
           A passionate developer exploring the intersection of AI and finance.
-          I’ve built various projects, such as a <strong>stock price prediction model</strong> and a powerful
-          <strong>trading card grading system</strong> using machine learning.
+          I’ve built projects like a <strong>stock price prediction model</strong> and a
+          <strong>TCG grading system</strong> powered by machine learning.
         </p>
         <a href="about.html" class="btn btn-primary me-2">View CV</a>
         <a href="custom.html" class="btn btn-outline-secondary">Explore More</a>
       </div>
 
       <div class="col-lg-6">
-        <div class="p-4 rounded-3 shadow-sm" style="background-color: var(--card-bg); color: var(--main-text);">
-          <h5 class="fw-bold">Quote of the Day</h5>
-          <p>
-            "To overthink is to kill dreams, to not think is to not create them. Balance is key."
-          </p>
-          <div class="d-flex gap-3 mt-3">
+        <div class="p-4 rounded-3 shadow-sm text-center quote-box">
+          <i class="bi bi-quote fs-1 d-block text-muted"></i>
+          <h5 class="fw-bold mb-3">Quote of the Day</h5>
+          <p class="fst-italic mb-0">"To overthink is to kill dreams, to not think is to not create them. Balance is key."</p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
             <a href="https://github.com/naxad" target="_blank" aria-label="GitHub Profile">
               <i class="bi bi-github fs-3"></i>
             </a>
@@ -49,6 +54,26 @@
       </div>
     </section>
 
+    <!-- Greeting (optional) -->
+    <p id="greeting" class="text-center text-muted mb-4"></p>
+
+    <!-- Quick Stats -->
+    <section class="row text-center mb-5">
+      <div class="col-md-4 mb-3">
+        <h3>3+</h3>
+        <p>AI Projects</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h3>2</h3>
+        <p>TCG Tools</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h3>1000+</h3>
+        <p>Coding Hours</p>
+      </div>
+    </section>
+
+    <!-- Latest Activity -->
     <section class="mt-5">
       <h2><i class="bi bi-activity"></i> Latest Activity</h2>
       <p style="color: var(--main-text);">Coming soon: real-time updates on my projects and tasks.</p>
@@ -59,8 +84,9 @@
   <div id="footer"></div>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/index.js" defer></script>
 </body>
 </html>
