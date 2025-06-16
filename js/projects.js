@@ -63,11 +63,13 @@ $(document).ready(function () {
   $('#projectForm').submit(function (e) {
     e.preventDefault();
     const newProject = {
+      id: Date.now(), // unique ID
       name: $('#name').val(),
       description: $('#description').val(),
       dueDate: $('#dueDate').val(),
       priority: $('#priority').val(),
       status: 'pending'
+
     };
     projects.push(newProject);
     localStorage.setItem('projects', JSON.stringify(projects));
