@@ -3,6 +3,8 @@ $(document).ready(function () {
   let projects = JSON.parse(localStorage.getItem('projects')) || [];
   let isAdmin = false;
   renderProjects(); // <-- render first for background context
+  const today = new Date().toISOString().split("T")[0];
+  $("#dueDate").attr("min", today);
 
   setTimeout(() => {
     const key = prompt("Enter admin key to manage projects:");
