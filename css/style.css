@@ -226,3 +226,29 @@ footer {
 td .btn {
   margin-bottom: 4px;
 }
+
+
+#projectTable td,
+#projectTable th {
+  word-break: break-word;
+  white-space: normal;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
+
+#projectTable {
+  table-layout: fixed;
+}
+
+
+@media (max-width: 576px) {
+  #projectTable td {
+    font-size: 0.85rem;
+  }
+
+  #projectTable td .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
