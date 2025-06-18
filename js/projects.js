@@ -2,14 +2,17 @@
 $(document).ready(function () {
   let projects = JSON.parse(localStorage.getItem('projects')) || [];
   let isAdmin = false;
+  renderProjects(); // <-- render first for background context
 
-  // Prompt for admin key (for simplicity)
-  const key = prompt("Enter admin key to manage projects:");
-  if (key === "internetprogramming2025") {
-    isAdmin = true;
-  } else {
-    $('#projectForm input, #projectForm select, #projectForm button').prop('disabled', true);
-  }
+  setTimeout(() => {
+    const key = prompt("Enter admin key to manage projects:");
+    if (key === "internetprogramming2025") {
+      isAdmin = true;
+    } else {
+      $('#projectForm input, #projectForm select, #projectForm button').prop('disabled', true);
+    }
+    renderProjects(); // re-render to show buttons
+  }, 100);
 
   function renderProjects() {
     const statusFilter = $('#filterStatus').val();
