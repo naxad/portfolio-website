@@ -204,3 +204,25 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#projectTable td {
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 250px;
+  vertical-align: middle;
+}
+
+#projectTable th,
+#projectTable td {
+  white-space: normal !important;
+}
+
+@media (max-width: 768px) {
+  #projectTable td {
+    max-width: 100px;
+    font-size: 0.875rem;
+  }
+}
+
+td .btn {
+  margin-bottom: 4px;
+}
